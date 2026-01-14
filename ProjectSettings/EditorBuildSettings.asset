@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MessageScreen.unity
+    guid: d62ebe47a277d1742969ee0f014c857a
+  - enabled: 1
+    path: Assets/Scenes/EncounterScreen.unity
+    guid: e648def969937044792905c00f6ded06
+  - enabled: 1
     path: Assets/Scenes/TitleScreen.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1

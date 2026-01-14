@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efc011818b03fa042a4dbd7936a1c843, type: 3}
+  m_Name: SysMessages
+  m_EditorClassIdentifier: 
+  salute:
+  - text: Welcome to the Game!
+    type: 0
+    onShow:
+      m_PersistentCalls:
+        m_Calls: []
+    waitForEventCompletion: 0
+  - text: My name is Loki.
+    type: 0
+    onShow:
+      m_PersistentCalls:
+        m_Calls: []
+    waitForEventCompletion: 0
+  - text: How may I call you?
+    type: 1
+    onShow:
+      m_PersistentCalls:
+        m_Calls: []
+    waitForEventCompletion: 0
