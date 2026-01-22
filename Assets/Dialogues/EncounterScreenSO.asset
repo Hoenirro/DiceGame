@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messageEncounters:
   - messages:
-    - So... this is defective
+    - this is defective
     - it's your first time..
     - This should be easy!
     encounterIndex: 0

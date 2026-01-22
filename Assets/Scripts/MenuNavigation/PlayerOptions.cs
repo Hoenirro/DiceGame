@@ -28,15 +28,22 @@ public class PlayerOptions : MonoBehaviour
             {
                 mode = Navigation.Mode.Explicit,
                 selectOnRight = Buttons[(i - 1 + Buttons.Count) % Buttons.Count],
-                selectOnLeft = Buttons[(i + 1) % Buttons.Count]
+                selectOnLeft = Buttons[(i + 1) % Buttons.Count],
+                selectOnUp = Buttons[(i - 1 + Buttons.Count) % Buttons.Count],
+                selectOnDown = Buttons[(i + 1) % Buttons.Count]
             };
             Buttons[i].navigation = nav;
         }
         if (Buttons.Count > 0) Buttons[0].Select();
         return Buttons;
     }
-    void Start()
+
+    public void ClearButtons()
     {
-        //EventSystem.current.SetSelectedGameObject(firstButton.gameObject);
+        foreach (Transform child in transform)
+        {
+            Destroy(child.gameObject);
+        }
     }
+
 }

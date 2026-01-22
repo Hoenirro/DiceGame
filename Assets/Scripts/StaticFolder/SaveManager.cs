@@ -47,4 +47,26 @@ public static class SaveManager
     }
     #endregion
 
+    #region PlayerStats
+
+    public static int LoadPlayerDice()
+    {
+        return PlayerPrefs.GetInt("PlayerDice", 0);
+    }
+
+    public static event System.Action playerDiceChanged;
+
+    public static int addPlayerDice(int amount)
+    {
+        int currentDice = LoadPlayerDice();
+        currentDice += amount;
+        PlayerPrefs.SetInt("PlayerDice", currentDice);
+        PlayerPrefs.Save();
+        if (currentDice < 0) currentDice = 0;
+        playerDiceChanged?.Invoke();
+        return PlayerPrefs.GetInt("PlayerDice");
+    } 
+
+    #endregion
+
 }
